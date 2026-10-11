@@ -1,17 +1,32 @@
-//
-//  XCUIDemoApp.swift
-//  XCUIDemo
-//
-//  Created by Pau Davi on 11/10/26.
-//
-
 import SwiftUI
+import UserNotifications
 
 @main
 struct XCUIDemoApp: App {
+
+    @State private var session = Session(currentUser: AppConfig.startLoggedIn ? Session.demoEmail : nil)
+    @State private var store = ArticleStore()
+    private let notificationDelegate = NotificationDelegate()
+
+    init() {
+        if AppConfig.isUITesting {
+            // Empezar como recién instalada: sin preferencias guardadas
+            if let bundleID = Bundle.main.bundleIdentifier {
+                UserDefaults.standard.removePersistentDomain(forName: bundleID)
+            }
+        }
+        UNUserNotificationCenter.current().delegate = notificationDelegate
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if AppConfig.showGreetingDemo {
+                ContentView() // Lección 0
+            } else {
+                RootView()
+                    .environment(session)
+                    .environment(store)
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ struct XCUIDemoApp: App {
 
     init() {
         if AppConfig.isUITesting {
-            // Empezar como recién instalada: sin preferencias guardadas
+            // Start as a fresh install, no preferences saved
             if let bundleID = Bundle.main.bundleIdentifier {
                 UserDefaults.standard.removePersistentDomain(forName: bundleID)
             }

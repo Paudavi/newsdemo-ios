@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "D4BB9A1A-7EA4-4AFD-8BAA-82DC90C603AC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:XCUIDemo.xcodeproj",
+      "identifier" : "F6C0BD22307C31CF001CBD38",
+      "name" : "XCUIDemo"
+    },
+    "testInteropMode" : "complete"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:XCUIDemo.xcodeproj",
+        "identifier" : "F6C0BD2F307C31D1001CBD38",
+        "name" : "XCUIDemoTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:XCUIDemo.xcodeproj",
+        "identifier" : "F6C0BD39307C31D1001CBD38",
+        "name" : "XCUIDemoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

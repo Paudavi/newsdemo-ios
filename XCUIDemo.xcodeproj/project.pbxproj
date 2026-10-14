@@ -24,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C75DE3830801FA9006F9C8B /* XCUIDemo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = XCUIDemo.xctestplan; sourceTree = "<group>"; };
 		F6C0BD23307C31CF001CBD38 /* XCUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C0BD30307C31D1001CBD38 /* XCUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C0BD3A307C31D1001CBD38 /* XCUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +76,7 @@
 		F6C0BD1A307C31CE001CBD38 = {
 			isa = PBXGroup;
 			children = (
+				6C75DE3830801FA9006F9C8B /* XCUIDemo.xctestplan */,
 				F6C0BD25307C31CF001CBD38 /* XCUIDemo */,
 				F6C0BD33307C31D1001CBD38 /* XCUIDemoTests */,
 				F6C0BD3D307C31D1001CBD38 /* XCUIDemoUITests */,

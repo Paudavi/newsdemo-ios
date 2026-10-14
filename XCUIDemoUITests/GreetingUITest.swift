@@ -21,7 +21,9 @@ final class GreetingUITest: XCTestCase {
     @MainActor
     func testShowsGreetingWithTypedName() throws {
         let app = XCUIApplication()
+        app.launchArguments = ["-greetingDemo"]
         app.launch()
+//        print(app.debugDescription)
         
         let nameInput = app.textFields["nameInput"]
         XCTAssertTrue(nameInput.waitForExistence(timeout: 5))

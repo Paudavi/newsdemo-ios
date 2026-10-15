@@ -50,4 +50,13 @@ final class LoginUITest: XCTestCase {
             XCUIApplication().launch()
         }
     }
+    
+    func errorDisappears() throws {
+        let loginScreen = LoginScreen(app: app)
+        loginScreen.login(email: "pau@test.com", password: "123457")
+        XCTAssertTrue(loginScreen.errorMessage.waitForExistence(timeout: 5))
+        
+        
+    }
+    
 }

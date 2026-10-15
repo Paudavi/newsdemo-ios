@@ -17,4 +17,5 @@ struct LoginScreen {
         XCTAssertTrue(loginButton.isEnabled, "Ingresar is not enabled", file: file, line: line)
         loginButton.tap()
     }
+    
 }
